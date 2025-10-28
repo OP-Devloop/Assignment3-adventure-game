@@ -1,7 +1,7 @@
-package se.sprinto.hakan.adventuregame.service;
+package se.iths.oscarp.adventuregame.service;
 
-import se.sprinto.hakan.adventuregame.dao.StatisticsDao;
-import se.sprinto.hakan.adventuregame.model.Statistics;
+import se.iths.oscarp.adventuregame.dao.StatisticsDao;
+import se.iths.oscarp.adventuregame.model.Statistics;
 
 import java.util.Comparator;
 import java.util.List;

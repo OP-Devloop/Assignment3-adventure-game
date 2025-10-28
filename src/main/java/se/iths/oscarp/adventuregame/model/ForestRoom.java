@@ -1,6 +1,6 @@
-package se.sprinto.hakan.adventuregame.model;
+package se.iths.oscarp.adventuregame.model;
 
-import se.sprinto.hakan.adventuregame.view.UI;
+import se.iths.oscarp.adventuregame.view.UI;
 
 public class ForestRoom implements Room {
 
