@@ -18,7 +18,7 @@ class DungeonCellRoom2Test {
         player = new Player.Builder()
                 .name("player")
                 .health(100)
-                .score(10)
+                .score(20)
                 .strength(10)
                 .build();
     }
@@ -29,6 +29,6 @@ class DungeonCellRoom2Test {
 
         dungeonCellRoom2.enterRoom(player, ui);
 
-        assertEquals(60, player.getScore());
+        assertEquals(10, player.getScore());
     }
 }

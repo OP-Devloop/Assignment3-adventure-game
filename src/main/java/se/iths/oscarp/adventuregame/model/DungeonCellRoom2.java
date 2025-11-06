@@ -25,9 +25,9 @@ public class DungeonCellRoom2 implements Room {
                 ui.showMessage("Du springer därifrån!");
                 break;
             } else if (choice2.equalsIgnoreCase("p")) {
+                player.loseScore(10);
                 gubben.speak();
                 ui.showMessage("Du bilr shockad och springer där ifrån");
-                player.loseScore(10);
                 break;
             }
         }
