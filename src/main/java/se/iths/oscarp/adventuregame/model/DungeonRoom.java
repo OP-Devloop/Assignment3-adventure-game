@@ -26,6 +26,19 @@ public class DungeonRoom implements Room {
                 break;
             }
         }
+        ui.showMessage("Du ser nonthing i både cell på höger och på vänster");
+        String choice = ui.getInput("Vill du undersöka (ja/nej)?");
+        if (choice.equalsIgnoreCase("ja")) {
+            String choice2 = ui.getInput("Vilken (h)öger eller (v)änster");
+            if (choice2.equalsIgnoreCase("h")) {
+                new DungeonCellRoom().enterRoom(player, ui);
+            } else if (choice2.equalsIgnoreCase("v")) {
+                new DungeonCellRoom2().enterRoom(player, ui);
+            }
+
+        } else {
+            ui.showMessage("Du ignorerar det och går vidare.");
+        }
     }
 }
 

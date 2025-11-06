@@ -15,6 +15,13 @@ public class ForestRoom implements Room {
         } else {
             ui.showMessage("Du ignorerar glittret och går vidare.");
         }
+        ui.showMessage("Nu när du är djupare i skogen kan du se en stuga");
+        String choice2 = ui.getInput("Vill du undersöka (ja/nej)?");
+        if (choice2.equalsIgnoreCase("ja")) {
+            new CabinRoom().enterRoom(player, ui);
+        } else {
+            ui.showMessage("Du ignorerar det och går vidare.");
+        }
     }
 }
 

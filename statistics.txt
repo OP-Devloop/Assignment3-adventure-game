@@ -1,3 +1,9 @@
 op;220
 op;0
 op;50
+test;50
+test2;70
+test3;50
+test4;150
+test;40
+test5;40

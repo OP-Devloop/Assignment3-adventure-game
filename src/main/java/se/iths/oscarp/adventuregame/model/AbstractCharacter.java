@@ -38,6 +38,14 @@ public abstract class AbstractCharacter {
         this.score += amount;
     }
 
+    public void loseScore(int amount) {
+        this.score -= amount;
+    }
+
+    public void addStrength(int amount) {
+        this.strength += amount;
+    }
+
     public int getStrength() {
         return strength;
     }

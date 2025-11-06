@@ -20,8 +20,6 @@ class DungeonRoomTest {
                 .build();
         dungeonRoom.enterRoom(player, ui);
 
-        assertEquals(true, player.hasDefeatedEnemy());
-
-
+        assertTrue(player.hasDefeatedEnemy());
     }
 }
