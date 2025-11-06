@@ -8,7 +8,7 @@ import java.util.List;
 
 public class FileStatisticsDao implements StatisticsDao {
 
-    private final File file = new File("statistics.txt");
+    private final File file = new File("data/statistics.txt");
 
     @Override
     public void save(Statistics stat) {
