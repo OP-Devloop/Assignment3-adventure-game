@@ -7,7 +7,7 @@ public class DungeonCellRoom implements Room {
     @Override
     public void enterRoom(Player player, UI ui) {
         ui.showMessage("Du går ner i en kall fängelsecell. En kobold står i cellen!");
-        EnemyAngry kobold = new EnemyAngry("Kobold", 20, 0, 5);
+        EnemyAngry kobold = new EnemyAngry("Kobold", 30, 0, 5);
 
         while (player.isAlive() && kobold.isAlive()) {
             String choice = ui.getInput("Vill du (a)ttackera, (h)åna eller (r)etirera?");
