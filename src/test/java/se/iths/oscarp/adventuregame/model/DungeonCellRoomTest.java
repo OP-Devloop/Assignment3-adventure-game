@@ -30,5 +30,7 @@ class DungeonCellRoomTest {
         dungeonCellRoom.enterRoom(player, ui);
 
         assertTrue(player.hasDefeatedEnemy());
+
+        assertEquals(90, player.getHealth());
     }
 }
