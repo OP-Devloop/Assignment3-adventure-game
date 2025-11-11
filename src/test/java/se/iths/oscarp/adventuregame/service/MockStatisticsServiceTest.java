@@ -39,7 +39,7 @@ class MockStatisticsServiceTest {
 
         List<Statistics> result = statServ.getSortedStatistics();
 
-        assertEquals(dao.loadAll(), result, "Sorted list has not been sorted");
+        assertEquals(dao.loadAll(), result, "Sorted list has been sorted");
 
         assertEquals("PlayerName4", result.get(0).getPlayerName());
         assertEquals("PlayerName3", result.get(1).getPlayerName());
