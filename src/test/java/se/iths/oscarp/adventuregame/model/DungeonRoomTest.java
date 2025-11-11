@@ -21,5 +21,7 @@ class DungeonRoomTest {
         dungeonRoom.enterRoom(player, ui);
 
         assertTrue(player.hasDefeatedEnemy());
+
+        assertEquals(95, player.getHealth());
     }
 }
